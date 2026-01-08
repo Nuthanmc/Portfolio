@@ -13,3 +13,21 @@ document.querySelector('.contact-form')?.addEventListener('submit', e => {
   alert("Thanks for your message! I'll get back to you soon 😊");
   e.target.reset();
 });
+
+const sections = document.querySelectorAll("section, header");
+const dockLinks = document.querySelectorAll(".sidebar a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach(sec => {
+    const top = sec.offsetTop - 150;
+    if (pageYOffset >= top) current = sec.getAttribute("id");
+  });
+
+  dockLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});

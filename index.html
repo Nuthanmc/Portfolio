@@ -9,7 +9,6 @@
 </head>
 <body>
 
-
 <nav class="glass-nav">
   <div class="nav-inner">
     <div class="nav-left">
@@ -22,13 +21,16 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#certificates">Certifications</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
-      
     </ul>
 
     <div class="nav-right">
       <a href="#contact" class="nav-btn">Hire Me</a>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </div>
 </nav>
@@ -40,17 +42,19 @@
   <a href="#skills" title="Skills"><span>⚙️</span></a>
   <a href="#contact" title="Contact"><span>✉️</span></a>
 </div>
-<header class="hero-saas">
+
+<header class="hero-saas" id="home">
   <p class="tagline">Built for impact and innovation</p>
   <h1>AI Engineer & Researcher Building Intelligent Systems</h1>
   <p class="subtitle">
     I design scalable AI, blockchain and data-driven solutions to solve real-world problems.
   </p>
 
-  <div class="hero-actions">
-    <a href="#projects" class="btn primary">View Projects</a>
-    <a href="#contact" class="btn secondary">Contact Me</a>
-  </div>
+ <div class="hero-actions">
+  <a href="#projects" class="btn primary">View Projects</a>
+  <a href="E:\Portfolio-1\Nuthan_Resume.pdf" class="btn secondary" download>Download Resume</a>
+</div>
+
 
   <div class="logos">
     <span>Python</span>
@@ -61,70 +65,102 @@
   </div>
 </header>
 
-
+<!-- Add your sections below -->
 <section class="features">
   <h2>What I Build</h2>
   <p class="features-sub">Core areas where I create value</p>
 
   <div class="features-grid">
+
     <div class="feature-card">
       <h3>Intelligent Systems</h3>
-      <p>Machine learning and deep learning models for prediction, detection, and automation.</p>
+      <p>
+        Design and deploy machine learning and deep learning models for prediction,
+        detection, automation, and decision support across real-world domains.
+      </p>
     </div>
 
     <div class="feature-card">
       <h3>Blockchain Applications</h3>
-      <p>Secure, decentralized platforms using smart contracts and distributed ledgers.</p>
+      <p>
+        Build secure, decentralized platforms using smart contracts and distributed
+        ledgers to enable trust, transparency, and data integrity.
+      </p>
     </div>
 
     <div class="feature-card">
       <h3>Scalable Web Platforms</h3>
-      <p>Modern full-stack web applications using MERN and Next.js.</p>
+      <p>
+        Develop modern, high-performance full-stack web applications using MERN,
+        Next.js, and cloud-native architectures.
+      </p>
     </div>
+
   </div>
 </section>
 
 
-<section id="about" class="section glass">
+
+<section id="about" class="section about-section">
   <h2>About Me</h2>
-  <p>
-    Artificial Intelligence Professional with demonstrated expertise in software engineering and data science. Proficient in Python, SQL, and advanced frameworks like Pandas and Scikit-learn, with a proven record of developing AI-driven solutions. Published researcher in IEEE Xplore on financial fraud detection, showcasing applied machine learning expertise for high-impact domains. Committed to leveraging disruptive technologies and computational intelligence to solve complex real-world challenges
-  </p>
+
+  <div class="about-container glass">
+    <p>
+      I am an Artificial Intelligence professional with demonstrated expertise in software engineering
+      and data science. I specialize in building intelligent, scalable, and data-driven solutions using
+      modern machine learning and deep learning techniques.
+    </p>
+    <p>
+      I am committed to leveraging disruptive technologies and computational intelligence to solve
+      complex real-world challenges and deliver meaningful impact.
+    </p>
+  </div>
 </section>
 
-<section id="resume" class="section resume-section glass">
+
+<section id="Resume" class="section">
   <h2>Resume</h2>
-  <p class="resume-sub">
-    Download my resume to know more about my education, skills, research, and projects.
-  </p>
+  <div class="grid">
+    
+  <a href="file:///E:/Nanna%20pics/Nuthan_Resume.pdf" class="btn">Download Resume</a>
 
-  <a href="Nuthan_Resume.pdf" download class="btn resume-btn">
-    📄 Download Resume
-  </a>
+  </div>
 </section>
-
 
 
 
 <section id="projects" class="section">
   <h2>Projects</h2>
+
   <div class="grid">
 
-    <div class="card">
+    <div class="card project-card">
       <h3>FarmersHub</h3>
-      <p>AI-powered MERN platform for crop diagnosis, storage, and trading.</p>
-      <small>MERN, CNN, NLP, TensorFlow</small>
+      <p class="project-desc">
+        AI-powered MERN platform for crop diagnosis, storage management, and agricultural trading.
+      </p>
+
+      <div class="project-meta">
+        <span>Stack:</span> MERN, CNN, NLP, TensorFlow
+      </div>
+
       <div class="project-links">
-        <a href="https://github.com/Nuthanmc/FarmersHub" target="_blank" class="btn">GitHub</a>
+        <a href="https://github.com/yourusername/FarmersHub" target="_blank" class="btn">GitHub</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card project-card">
       <h3>GradeChain</h3>
-      <p>Blockchain-based academic certificate verification system.</p>
-      <small>Next.js, Smart Contracts, Blockchain</small>
+      <p class="project-desc">
+        Blockchain-based academic certificate verification and result validation system.
+      </p>
+
+      <div class="project-meta">
+        <span>Stack:</span> Next.js, Smart Contracts, Blockchain
+      </div>
+
       <div class="project-links">
-        <a href="https://github.com/Nuthanmc/Grade-Chain" target="_blank" class="btn">GitHub</a>
+        <a href="https://github.com/yourusername/GradeChain" target="_blank" class="btn">GitHub</a>
       </div>
     </div>
 
@@ -132,59 +168,64 @@
 </section>
 
 
-<section id="publications" class="section glass">
+<section id="publications" class="section publications-section">
   <h2>Publications</h2>
-  <div class="grid">
-    <div class="card">
+
+  <div class="pub-card glass">
+    <div class="pub-content">
       <h3>Neural Networks for Financial Fraud Detection</h3>
-      <p><b>IEEE Xplore, 2025</b></p>
-      <p>Scalable deep learning architectures for fraud detection in financial systems.</p>
-      <a href="https://ieeexplore.ieee.org/document/10987357" class="btn">View Paper</a>
+      <p class="pub-meta">IEEE Xplore · 2025</p>
+      <p class="pub-desc">
+        This paper proposes scalable deep learning architectures to improve fraud detection
+        accuracy in large-scale financial systems.
+      </p>
+      <a href="https://ieeexplore.ieee.org" target="_blank" class="btn primary">View Paper</a>
     </div>
   </div>
 </section>
 
 
 
-<section id="certificates" class="section">
+<section id="certificates" class="section certifications-section">
   <h2>Certifications</h2>
-  <div class="grid">
 
-    <div class="card">
-      <h3>Infosys-Springboard</h3>
-      <p>Artificial Intelligence and Machine learning</p>
-      <small>MERN, CNN, NLP, TensorFlow</small>
-      <div class="links">
-        <a href="*" target="_blank" class="btn"></a>
-      </div>
-    </div>
-  <div class="card">
-      <h3>Hacker Rank </h3>
-      <p>Python, C , Java</p>
-      <small>------</small>
-      <div class="project-links">
-        <a href="*" target="_blank" class="btn"></a>
-      </div>
+  <div class="grid certifications-grid">
+
+    <div class="card cert-card">
+      <h3>Artificial Intelligence & Machine Learning</h3>
+      <p class="cert-issuer">Infosys Springboard</p>
+      <p class="cert-desc">
+        Covered supervised & unsupervised learning, neural networks, NLP, and model deployment.
+      </p>
+      <p class="cert-skills">Skills: ML, CNN, NLP, TensorFlow</p>
     </div>
 
-    <div class="card">
-      <h3>TCS ion </h3>
-      <p>Young Professional Course</p>
-      <small>------</small>
-      <div class="project-links">
-        <a href="*" target="_blank" class="btn"></a>
-      </div>
+    <div class="card cert-card">
+      <h3>Python, C & Java</h3>
+      <p class="cert-issuer">HackerRank</p>
+      <p class="cert-desc">
+        Validated programming skills through competitive coding and assessments.
+      </p>
+      <p class="cert-skills">Skills: Python, C, Java</p>
     </div>
 
-     <div class="card">
-      <h3>MicroDegree </h3>
-      <p>Python Full Stack Development</p>
-      <small>------</small>
-      <div class="project-links">
-        <a href="*" target="_blank" class="btn"></a>
-      </div>
+    <div class="card cert-card">
+      <h3>Young Professional Program</h3>
+      <p class="cert-issuer">TCS iON</p>
+      <p class="cert-desc">
+        Training in professional skills, IT fundamentals and workplace readiness.
+      </p>
+      <p class="cert-skills">Skills: Communication, IT Fundamentals</p>
     </div>
 
+    <div class="card cert-card">
+      <h3>Python Full Stack Development</h3>
+      <p class="cert-issuer">MicroDegree</p>
+      <p class="cert-desc">
+        End-to-end web development using Python, databases and frontend technologies.
+      </p>
+      <p class="cert-skills">Skills: Python, HTML, CSS, JavaScript</p>
+    </div>
 
   </div>
 </section>
@@ -193,37 +234,67 @@
 
 
 
-<section id="skills" class="section">
+<section id="skills" class="section skills-section">
   <h2>Skills</h2>
-  <div class="grid">
-    <div class="card">Python, SQL, JavaScript</div>
-    <div class="card">Machine Learning, Deep Learning</div>
-    <div class="card">Blockchain, Smart Contracts</div>
-    <div class="card">Research, Leadership, Communication</div>
+
+  <div class="grid skills-grid">
+
+    <div class="card skill-card">
+      <h3>Programming</h3>
+      <p>Python, SQL, JavaScript</p>
+    </div>
+
+    <div class="card skill-card">
+      <h3>AI & Data</h3>
+      <p>Machine Learning, Deep Learning</p>
+    </div>
+
+    <div class="card skill-card">
+      <h3>Blockchain</h3>
+      <p>Blockchain, Smart Contracts</p>
+    </div>
+
+    <div class="card skill-card">
+      <h3>Professional</h3>
+      <p>Research, Leadership, Communication</p>
+    </div>
+
   </div>
 </section>
 
 
-<section class="features">
-<h2>Education</h2>
+
+<section id="education" class="section glass">
+  <h2>Education</h2>
 
   <div class="grid">
 
-    <div class="card">
-      <h3>Master's Degree</h3>
-      <p>Master of Computer Applications</p>
-      <p>Speclization in  AI|ML|DS</p>
-    </div> 
+    <div class="card education-card">
+      <h3>Master of Computer Applications (MCA)</h3>
+      <p class="edu-institute">S-Vyasa Deemed to be University</p>
 
-    <div class="card">
-      <h3>Bachelor's Degree</h3>
-      <p>Bachelor of Computer Applications</p>
-      <p>Speclization in Artificial Intelligence</p>
-      <p>CGPA-8.1</p>
+      <div class="edu-details">
+        <div><span>Level:</span> Master’s Degree</div>
+        <div><span>Specialization:</span> Artificial Intelligence, Machine Learning & Data Science</div>
+        <div><span>Duration:</span> 2025 – 2027 (Expected)</div>
+      </div>
     </div>
 
-    
+    <div class="card education-card">
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <p class="edu-institute">Nitte Deemed to be University</p>
+
+      <div class="edu-details">
+        <div><span>Level:</span> Bachelor’s Degree</div>
+        <div><span>Specialization:</span> Artificial Intelligence</div>
+        <div><span>CGPA:</span> 8.03 / 10</div>
+        <div><span>Duration:</span> 2022 – 2025</div>
+      </div>
+    </div>
+
+  </div>
 </section>
+
 
 
 
