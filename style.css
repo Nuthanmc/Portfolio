@@ -625,3 +625,29 @@ body {
   margin-bottom: 12px;
   color: #a78bfa;
 }
+
+
+/*mbilw iwjip*/
+@media (max-width: 768px) {
+  .glass-nav {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .nav-inner {
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
