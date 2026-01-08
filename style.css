@@ -321,3 +321,107 @@ body {
   .hero-saas { padding: 120px 5% 60px; }
   .hero-actions { flex-direction: column; gap: 15px; }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ================= RESPONSIVE ENHANCEMENTS ================= */
+
+/* Large screens (desktops & above) */
+@media (min-width: 1400px) {
+  .section {
+    padding: 120px 15%;
+  }
+  .hero-saas h1 {
+    font-size: 3.8rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 28px;
+    margin-left: 20px;
+  }
+
+  .hero-saas {
+    padding: 120px 8% 80px;
+  }
+
+  .features-grid,
+  .grid,
+  .contact-grid {
+    gap: 24px;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .glass-nav {
+    top: 10px;
+    padding: 12px 20px;
+  }
+
+  .nav-left .brand {
+    display: none;
+  }
+
+  .hero-saas h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .features-grid,
+  .grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .glass-nav {
+    width: calc(100% - 20px);
+  }
+
+  .hero-saas {
+    padding-top: 120px;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 60px 6%;
+  }
+
+  .card, .feature-card {
+    padding: 24px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+}
