@@ -31,3 +31,10 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+
+const form = document.querySelector(".contact-form");
+
+form?.addEventListener("submit", () => {
+  alert("Thank you! Your message has been sent 😊");
+});
